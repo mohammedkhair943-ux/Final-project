@@ -138,9 +138,8 @@ nav {
 
 /* Responsive */
 @media (max-width: 600px), 
-       (min-width: 601px) and (max-width: 900px),
-       (min-width: 901px) and (max-width: 1200px),
-(max-width: 950px){
+       (min-width: 601px) and (max-width: 1024px),
+       (min-width: 1025px){
     .hero {
         padding: 60px 15px;
     }
@@ -423,6 +422,7 @@ margin: 30px 0;
 .log {
     padding: 30px;
 }
+
 
 
 
