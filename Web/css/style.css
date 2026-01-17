@@ -169,6 +169,10 @@ nav {
     body {
      margin-right: -100%;
     }
+    .simple-slider {
+        max-height: 30vh;
+        width: 30vh;
+    }
 }
 
 .page-title {
@@ -418,6 +422,7 @@ margin: 30px 0;
 .log {
     padding: 30px;
 }
+
 
 
 
