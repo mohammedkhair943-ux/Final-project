@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Liverpool FC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bdy">
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Liverpool FC" class="logo">
+            <div class="header-text">
+                <h1>Liverpool FC</h1>
+                <p class="para">You'll Never Walk Alone</p>
+            </div>
+        </div>
+    </header>
+    <nav id="mainNav">
+        <ul class="main-nav">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="booking.html"><i class="fas fa-ticket-alt"></i> Book Tickets</a></li>
+            <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+            <li><a href="contact.html" class="active"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+<main>
+    <div class="container">
+        <h2 class="page-title login">Contact Us</h2>
+        <div class="contact-container">           
+            <div class="form con">
+                <form id="contactForm" action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <select id="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="tickets">Ticket Information</option>
+                            <option value="merchandise">Merchandise</option>
+                            <option value="membership">Membership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-sub">Send Message</button>
+                </form>
+            </div>
+        </div>
+    <div class="foot">
+         <div class="contact-info">
+                <h3><i class="fas fa-map-marker-alt"></i> Our Address</h3>
+                <p>Anfield Road<br>Liverpool L4 0TH<br>United Kingdom</p>
+                
+                <h3><i class="fas fa-phone"></i> Phone Numbers</h3>
+                <p>Ticket Office: +44 151 264 2500<br>
+                   General Enquiries: +44 151 264 2222</p>
+                
+                <h3><i class="fas fa-envelope"></i> Email</h3>
+                <p>info@liverpoolfc.com</p>
+                
+                <h3><i class="fas fa-clock"></i> Opening Hours</h3>
+                <p>Monday-Friday: 9am-5pm<br>
+                   Saturday: 10am-4pm<br>
+                   Sunday: Closed</p>
+            </div>
+          
+            <div class="social-section">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i> YouTube</a>
+            </div>
+        </div>
+    </div>
+    </div>
+</main>
+    <footer class="feet">
+        <p class="copyright">&copy; 2026 Liverpool FC. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>

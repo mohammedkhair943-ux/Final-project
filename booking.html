@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Tickets - Liverpool FC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body class="bdy bk">
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Liverpool FC" class="logo">
+            <div class="header-text">
+                <h1>Liverpool FC</h1>
+                <p class="para">You'll Never Walk Alone</p>
+            </div>
+        </div>
+    </header>
+    
+    <nav id="mainNav">
+        <ul class="main-nav">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+            <li><a href="booking.html" class="active"><i class="fas fa-ticket-alt"></i> Book Tickets</a></li>
+            <li><a href="login.html"><i class="fas fa-user"></i> Login</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2 class="page-title">Book Your Seat</h2>
+        
+        <div class="form">
+            <form id="bookingForm" action="#" method="get">
+                <div class="form-group">
+                    <label for="match">Select Match:</label>
+                    <select id="match" name="match" required>
+                        <option value="">Choose a match</option>
+                        <option value="liv-mu">Liverpool vs Manchester United</option>
+                        <option value="liv-mc">Liverpool vs Manchester City</option>
+                        <option value="liv-ars">Liverpool vs Arsenal</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="seats">Number of Seats:</label>
+                    <input type="number" id="seats" name="seats" min="1" max="10" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="section">Stadium Section:</label>
+                    <select id="section" name="section" required>
+                        <option value="">Choose section</option>
+                        <option value="kop">The Kop</option>
+                        <option value="main">Main Stand</option>
+                        <option value="anfield">Anfield Road</option>
+                    </select>
+                </div>
+                
+                <div class="price-summary">
+                    <h4>Price Summary</h4>
+                    <p>Price per ticket: $75</p>
+                    <p>Number of seats: <span id="seatCount">0</span></p>
+                    <p class="total">Total: $<span id="totalPrice">0</span></p>
+                </div>
+                
+                <button type="submit" class="btn-sub">Book Now</button>
+            </form>
+        </div>
+        
+        <div class="seating">
+            <h3>Seating Plan</h3>
+            <div class="stadium-diagram">
+                <div class="pitch">PITCH</div>
+                <div class="stands">
+                    <div class="stand kop">Kop Stand</div>
+                    <div class="stand main">Main Stand</div>
+                    <div class="stand anfield">Anfield Road</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p class="copyright">&copy; 2026 Liverpool FC. All rights reserved.</p>
+    </footer>
+    </body>
+</html>
