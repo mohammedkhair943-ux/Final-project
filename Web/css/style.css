@@ -166,10 +166,12 @@ nav {
     .footlg {
         margin-top: 20%;
     }
-    
-    .srvc {
-    margin-right: -100%;
+    body {
+     margin-right: -100%;
     }
+    /*.srvc {
+    margin-right: -100%;
+    }*/
     .simple-slider {
     height: 40vh;
     width: 60vh;
@@ -423,3 +425,4 @@ margin: 30px 0;
 .log {
     padding: 30px;
 }
+
