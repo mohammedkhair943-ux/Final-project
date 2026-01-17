@@ -170,8 +170,8 @@ nav {
      margin-right: -100%;
     }
     .simple-slider {
-        max-height: 30vh;
-        width: 30vh;
+        height: 60vh;
+        width: 50vh;
     }
 }
 
@@ -422,6 +422,7 @@ margin: 30px 0;
 .log {
     padding: 30px;
 }
+
 
 
 
