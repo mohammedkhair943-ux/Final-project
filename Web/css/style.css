@@ -44,13 +44,14 @@ nav {
 .main-nav {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 0;
     max-width: 1200px;
     margin: 0 auto;
 }
 .main-nav a {
     color: white;
-    padding: 18px 25px;
+    padding: 18px 15px;
     display: block;
     font-size: 16px;
     font-weight: 500;
@@ -77,10 +78,12 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     
 }
 .feature-card {
-    padding: 10px;
+    padding: 20px;
+    
 }
 .section-title {
     color: #C8102E;
@@ -90,26 +93,25 @@ nav {
 
 .simple-slider {
     height: 300px;
-    width: 100vh;
+    width: 360px;
     margin: 0 auto 40px;
 }
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
-    margin-top: 20px;
 }
 
 .link-card {
     background: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     color: #333;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-evenly;
     gap: 10px;
 }
 
@@ -123,7 +125,6 @@ nav {
     color: #C8102E;
 }
 .copyright {
-    text-align: left;
     padding: 20px;
     background: #111;
     color: white;
@@ -132,47 +133,9 @@ nav {
 
 .social-icons {
     display: flex;
+    justify-content: center;
     gap: 15px;
     font-size: 1.5rem;
-}
-
-/* Responsive */
-@media (max-width: 600px), 
-       (min-width: 601px) and (max-width: 1024px),
-       (min-width: 1025px){
-    .hero {
-        padding: 60px 15px;
-    }
-    
-    .hero h2 {
-        font-size: 1.8rem;
-    }
-    .links-grid {
-        grid-template-columns: repeat(1, 1fr);
-        background-color: #C8102E;
-        row-gap: 10px;
-    }
-    .contact-info {
-        display: none;
-    }
- 
-    .ava {
-        margin-bottom: 50px;
-    }
-    .feet {
-        margin-top: 14%;
-    }
-    .footlg {
-        margin-top: 20%;
-    }
-    body {
-     margin-right: -100%;
-    }
-    .simple-slider {
-        height: 100vh;
-        width: 80vh;
-        margin-bottom: -12%;
-    }
 }
 
 .page-title {
@@ -218,18 +181,21 @@ nav {
     margin-top: 10px;
     border: none;
     cursor: pointer;
-    transition: transform .3s;
+    transition: all .3s;
 }
 
 .btn:hover {
     background: #A50021;
     transform: translateY(-5px);
-    transition: 0.3s;
 }
 .serv {
-    font-size: larger;
+    font-size: 18px;
     margin-top: 25%;
-    padding: 20px 30px;
+    padding: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 110px;
+    
 }
 .auth-form {
     background: white;
@@ -237,15 +203,14 @@ nav {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     max-width: 400px;
-    margin: 20px auto;
 }
 .form{
     background-color: #C8102E;
-    margin: 10px 30%;
+    margin: 10% 20%;
     border-radius: 20px;
 }
 .form-group {
-    margin: 10px 15%;
+    margin: 15px 60px;
     padding: 10px 0px;
 }
 
@@ -253,6 +218,7 @@ nav {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: left;
 }
 
 .form-group input,
@@ -281,7 +247,7 @@ nav {
     transition: 0.3s;
 }
 .auth-container {
-    padding: 12% 3%;
+    padding: 10% 0;
 }
 .switch {
     padding-bottom: 20px;
@@ -299,13 +265,14 @@ nav {
 .simple-table td {
     padding: 10px;
     border: 1px solid #ddd;
+    text-align: left;
 }
 
 .bdy {
     width: 100%;
-    height: 150vh;
+    min-height: 100vh;
     background-image: url('../images/stad.jpg');
-    background-image: color;
+    background-attachment: scroll;
     background-size: cover;
     position: relative;
     background-position: center;
@@ -343,7 +310,7 @@ margin: 30px 0;
     color:#e9dd3c;
 }
 .history {
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     align-content: space-evenly;
     color: #ffffff;
@@ -352,9 +319,7 @@ margin: 30px 0;
     background: #C8102E;
     padding: 10px;
     border-radius: 10px;
-    margin: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: 10% 20%;
 }
 .seating {
     padding: 20px;
@@ -373,7 +338,7 @@ margin: 30px 0;
 }
 .stands {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 20px;
 }
@@ -387,20 +352,26 @@ margin: 30px 0;
     min-width: 150px;
 }
 .merch {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(250px, 1fr));
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
 .shirts {
-    margin: 0 350px;
+    margin: 0 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgb(0, 0, 0);
-    height: 100vh;
+    height: 400px;
+    width: 320px;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 .merch h3 {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    
 }
 .ava {
     margin: 20px 0;
@@ -416,18 +387,56 @@ margin: 30px 0;
 }
 .shirts h3 {
     color: #ccbe01;
-    margin-top: 45%;
-    font-size: xx-large;
+
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
 .log {
     padding: 30px;
 }
-
-
-
-
-
-
-
-
-
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 15px;
+    }
+    
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+    .links-grid {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: #C8102E;
+        row-gap: 10px;
+    }
+    .contact-info {
+        display: none;
+    }
+ 
+    .ava {
+        margin-bottom: 50px;
+    }
+    .feet {
+        margin-top: 14%;
+    }
+    
+    .footlg {
+        margin-top: 20%;
+    }
+    .form {
+        margin: 10% 20%;
+    }
+    .serv {
+        left: 49px;
+    }
+    .shirts {
+        margin: -5px;
+    }
+    .shirts h3 {
+        border-radius: 5px;
+    }
+   .hm {
+    margin-top: -20%;
+   }
+    }
